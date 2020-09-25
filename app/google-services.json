@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "816514941897",
+    "firebase_url": "https://madproject2020gym-9b872.firebaseio.com",
+    "project_id": "madproject2020gym-9b872",
+    "storage_bucket": "madproject2020gym-9b872.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816514941897:android:7fa7881df4803b1b559e18",
+        "android_client_info": {
+          "package_name": "com.example.madproject2020gym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816514941897-jd0o0r38nvdu2qm85dnfap3ckod09v0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsTPZQXV_2WnRaNHUWx0Ouf9-gWDU2Wvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816514941897-jd0o0r38nvdu2qm85dnfap3ckod09v0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
