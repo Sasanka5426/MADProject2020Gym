@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">MADProject2020GYM</string>
+    <string name="app_name">MadProject</string>
+    <string name="gymS">GYM</string>
+    <string name="update_success">Updated Successfully</string>
+    <string name="add_member">Add New Members</string>
+    <string name="manage_member">Manage Members</string>
+    <string name="packages">Packages</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="save_change">Save Changes</string>
+    <string name="update_fee">Update Fee</string>
 </resources>
