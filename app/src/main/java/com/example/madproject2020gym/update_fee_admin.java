@@ -34,7 +34,7 @@ public class update_fee_admin extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.hasChildren()){
-                    txtDisplayFee.setText(snapshot.child("monthlyFee").getValue().toString());
+                    txtDisplayFee.setText(snapshot.child("fee1").getValue().toString());
 
 
                 }
