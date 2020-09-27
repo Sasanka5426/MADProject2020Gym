@@ -30,7 +30,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonManageMember"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
@@ -42,12 +42,24 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonPackages"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:background="@color/button_colorS"
         android:text="Packages"
+        android:textColor="@color/text_color1S"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonUpdateFee"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/button_colorS"
+        android:text="@string/update_fee"
+        android:textAlignment="center"
         android:textColor="@color/text_color1S"
         android:textSize="36sp"
         android:textStyle="bold" />
