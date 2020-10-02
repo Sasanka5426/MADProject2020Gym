@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -23,6 +25,7 @@ import viewHolderSk.PackageViewHolderSK;
      private DatabaseReference pkgRef;
      private RecyclerView recyclerView;
      RecyclerView.LayoutManager layoutManager;
+     Button btnAddNewPkg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,21 @@ import viewHolderSk.PackageViewHolderSK;
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        btnAddNewPkg = findViewById(R.id.buttonAddNewPackage);
+
+        btnAddNewPkg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(packages_admin.this,add_new_package_admin.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
     }
 
     @Override

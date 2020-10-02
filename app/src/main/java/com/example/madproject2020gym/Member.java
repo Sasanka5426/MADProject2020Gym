@@ -6,8 +6,17 @@ public class Member {
     private String weight;
     private Integer Pkg;
     private String password;
-    private String fee;
+   // private String fee;
     private String email;
+    private String phone;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public String getEmail() {
         return email;
@@ -17,13 +26,13 @@ public class Member {
         this.email = email;
     }
 
-    public String getFee() {
-        return fee;
-    }
-
-    public void setFee(String fee) {
-        this.fee = fee;
-    }
+//    public String getFee() {
+//        return fee;
+//    }
+//
+//    public void setFee(String fee) {
+//        this.fee = fee;
+//    }
 
     public Member() {
     }

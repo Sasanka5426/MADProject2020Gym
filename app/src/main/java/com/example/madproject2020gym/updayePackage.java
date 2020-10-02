@@ -36,6 +36,8 @@ public class updayePackage extends AppCompatActivity {
         txtpkgDeduct = findViewById(R.id.editTextDeduction);
         txtpkgDescription = findViewById(R.id.editTextDescription);
 
+        txtpkgName.setEnabled(false);
+
         getPackageDetails(packageName);
 
         btnDelete = findViewById(R.id.buttonDelete);

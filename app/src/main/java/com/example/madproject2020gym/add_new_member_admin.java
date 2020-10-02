@@ -18,15 +18,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class add_new_member_admin extends AppCompatActivity {
-    EditText txtName, txtAge, txtWeight, txtEmail, txtPackage, txtPassword;
+    EditText txtName, txtAge, txtWeight, txtEmail, txtPackage, txtPassword,txtPhone;
     Button btnAdd;
-    int monthlyFeeFinal, deductFinal;
+   // int monthlyFeeFinal, deductFinal;
     String packageName;
-    String deductStr;
-    int deductInt;
-    String monthlyFeeStr;
-    int monthlyFeeInt;
-    Double finalFee;
+    //String deductStr;
+    //int deductInt;
+    //String monthlyFeeStr;
+    //int monthlyFeeInt;
+    //Double finalFee;
 
 
 
@@ -38,17 +38,20 @@ public class add_new_member_admin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_member_admin);
 
-        txtName = findViewById(R.id.editTextName);
-        txtAge = findViewById(R.id.editTextAge);
-        txtWeight = findViewById(R.id.editTextWeight);
-        txtEmail = findViewById(R.id.editTextEmail);
-        txtPackage = findViewById(R.id.editTextPackage);
-        txtPassword = findViewById(R.id.editTextPassword);
+        txtName = (EditText) findViewById(R.id.editTextName);
+        txtAge = (EditText) findViewById(R.id.editTextAge);
+        txtWeight = (EditText) findViewById(R.id.editTextWeight);
+        txtEmail = (EditText) findViewById(R.id.editTextEmail);
+        txtPackage = (EditText)findViewById(R.id.editTextPackage);
+        txtPassword = (EditText)findViewById(R.id.editTextPassword);
+        txtPhone = (EditText)findViewById(R.id.editTextPhone);
+
+
 
         //packageName = findViewById(R.id.editTextName).toString();
-        packageName = txtPackage.toString();
+       // packageName = txtPackage.toString();
 
-        btnAdd =  findViewById(R.id.buttonAdd);
+        btnAdd =  (Button) findViewById(R.id.buttonAdd);
 
         member = new Member();
 
@@ -80,54 +83,54 @@ public class add_new_member_admin extends AppCompatActivity {
                     else {
 
 
-                            DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Packages").child(packageName);
-                            readRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                                @Override
-                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                    if (snapshot.hasChildren()) {
-                                        //deductStr = snapshot.child("deduction").getValue().toString().;
-                                        deductInt = Integer.parseInt(snapshot.child("deduction").getValue().toString());
-                                        deductFinal = deductInt;
-                                    } else
-                                        Toast.makeText(getApplicationContext(), "Error: Please check the Package name", Toast.LENGTH_SHORT).show();
-
-                                }
-
-                                @Override
-                                public void onCancelled(@NonNull DatabaseError error) {
-
-                                }
-                            });
-
-
-
-
-                            DatabaseReference readRef2 = FirebaseDatabase.getInstance().getReference().child("Fee").child("fee1");
-                            readRef2.addListenerForSingleValueEvent(new ValueEventListener() {
-                                @Override
-                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                    if (snapshot.hasChildren()) {
-                                        monthlyFeeStr = snapshot.child("fee1").getValue().toString();
-                                        monthlyFeeInt = Integer.parseInt(monthlyFeeStr);
-                                        monthlyFeeFinal = monthlyFeeInt;
-                                    } else {
-                                        Toast.makeText(getApplicationContext(), "Error: Could not retrieve the monthly fee", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-
-                                @Override
-                                public void onCancelled(@NonNull DatabaseError error) {
-                                }
-                            });
-
-
-
-                        try {
-                            String packageStr = txtPackage.toString();
-                            int packageInt = Integer.parseInt(packageStr);
+//                            DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Packages").child(packageName);
+//                            readRef.addListenerForSingleValueEvent(new ValueEventListener() {
+//                                @Override
+//                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                                    if (snapshot.hasChildren()) {
+//                                        //deductStr = snapshot.child("deduction").getValue().toString().;
+//                                        deductInt = Integer.parseInt(snapshot.child("deduction").getValue().toString());
+//                                        deductFinal = deductInt;
+//                                    } else
+//                                        Toast.makeText(getApplicationContext(), "Error: Please check the Package name", Toast.LENGTH_SHORT).show();
+//
+//                                }
+//
+//                                @Override
+//                                public void onCancelled(@NonNull DatabaseError error) {
+//
+//                                }
+//                            });
+//
+//
+//
+//
+//                            DatabaseReference readRef2 = FirebaseDatabase.getInstance().getReference().child("Fee").child("fee1");
+//                            readRef2.addListenerForSingleValueEvent(new ValueEventListener() {
+//                                @Override
+//                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                                    if (snapshot.hasChildren()) {
+//                                        monthlyFeeStr = snapshot.child("fee1").getValue().toString();
+//                                        monthlyFeeInt = Integer.parseInt(monthlyFeeStr);
+//                                        monthlyFeeFinal = monthlyFeeInt;
+//                                    } else {
+//                                        Toast.makeText(getApplicationContext(), "Error: Could not retrieve the monthly fee", Toast.LENGTH_SHORT).show();
+//                                    }
+//                                }
+//
+//                                @Override
+//                                public void onCancelled(@NonNull DatabaseError error) {
+//                                }
+//                            });
 
 
-                            finalFee = (monthlyFeeFinal * packageInt) * (100 - deductFinal) / 100.0;
+
+                        //try {
+                            //String packageStr = txtPackage.toString();
+                            //int packageInt = Integer.parseInt(packageStr);
+
+
+                            //finalFee = (monthlyFeeFinal * packageInt) * (100 - deductFinal) / 100.0;
 
 
 
@@ -137,26 +140,27 @@ public class add_new_member_admin extends AppCompatActivity {
                             member.setAge(txtAge.getText().toString().trim());
                             member.setPkg(Integer.parseInt(txtPackage.getText().toString().trim()));
                             member.setWeight(txtWeight.getText().toString().trim());
-                            member.setFee(finalFee.toString().trim());
+                           //member.setFee(finalFee.toString().trim());
                             member.setPassword(txtPassword.getText().toString().trim());
                             member.setEmail(txtEmail.getText().toString().trim());
+                            member.setPhone(txtPhone.getText().toString().trim());
 
                             //insert int database
-                            dbRef.child(member.getEmail()).setValue(member);
+                            dbRef.child(member.getPhone()).setValue(member);
                             //feedback to the user via a toast
 
                             Toast.makeText(getApplicationContext(), "Member data saved Successfully", Toast.LENGTH_SHORT).show();
-                        }
-                        catch(Exception ex){
-                            Toast.makeText(getApplicationContext(), "Errorrrrrrrrrrrrrr", Toast.LENGTH_SHORT).show();
-                        }
+                        //}
+                        //catch(Exception ex){
+                        //    Toast.makeText(getApplicationContext(), "Errorrrrrrrrrrrrrr", Toast.LENGTH_SHORT).show();
+                        //}
 
                     }
 
-                //}
-               // catch(Exception ex){
-                //    Toast.makeText(getApplicationContext(), "Sorry, something went wrong :(", Toast.LENGTH_SHORT).show();
                // }
+                //catch(Exception ex){
+                //    Toast.makeText(getApplicationContext(), "Sorry, something went wrong :(", Toast.LENGTH_SHORT).show();
+                //}
 
             }
         });

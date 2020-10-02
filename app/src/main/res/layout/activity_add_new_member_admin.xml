@@ -61,7 +61,7 @@
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Initial Weight : "
         android:textColor="@color/text_color2S"
         android:textSize="18sp"
@@ -81,7 +81,7 @@
         android:id="@+id/textView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Email :"
         android:textColor="@color/text_color2S"
         android:textSize="18sp"
@@ -101,7 +101,7 @@
         android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Packages :"
         android:textColor="@color/text_color2S"
         android:textSize="18sp"
@@ -118,10 +118,30 @@
         android:inputType="textPersonName" />
 
     <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Phone :"
+        android:textColor="@color/text_color2S"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone" />
+
+    <TextView
         android:id="@+id/textView16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Password :"
         android:textColor="@color/text_color2S"
         android:textSize="18sp"
@@ -141,7 +161,7 @@
         android:id="@+id/buttonAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         android:background="@color/button_colorS"
         android:text="ADD"
         android:textColor="@color/text_color1S"
