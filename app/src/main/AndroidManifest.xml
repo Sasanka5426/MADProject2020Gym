@@ -9,30 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".updayePackage">
-
-        </activity>
-        <activity android:name=".packages_admin">
-
-        </activity>
-        <activity android:name=".update_fee_admin"></activity>
-        <activity android:name=".gym_admin">
-
-        </activity>
-        <activity android:name=".admin_profile" />
-        <activity android:name=".add_new_package_admin">
-
-        </activity>
-        <activity android:name=".add_new_member_admin">
+        <activity android:name=".manage_members_admin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".admin_home" >
+        <activity android:name=".updayePackage"></activity>
+        <activity android:name=".packages_admin">
 
         </activity>
+        <activity android:name=".update_fee_admin" />
+        <activity android:name=".gym_admin"></activity>
+        <activity android:name=".admin_profile" />
+        <activity android:name=".add_new_package_admin"></activity>
+        <activity android:name=".add_new_member_admin">
+
+        </activity>
+        <activity android:name=".admin_home"></activity>
     </application>
 
 </manifest>

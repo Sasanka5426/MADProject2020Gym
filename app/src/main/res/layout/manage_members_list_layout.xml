@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/member_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color2S"/>
+
+        <TextView
+            android:id="@+id/member_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color2S"
+            android:layout_below="@+id/member_Name"/>
+
+        <TextView
+            android:id="@+id/member_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color2S"
+            android:layout_below="@+id/member_Email"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
