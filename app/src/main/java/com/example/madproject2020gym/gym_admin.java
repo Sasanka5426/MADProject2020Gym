@@ -39,13 +39,13 @@ public class gym_admin extends AppCompatActivity {
             }
         });*/
 
-        /*btnPackages.setOnClickListener(new View.OnClickListener() {
+        btnPackages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent3 = new Intent(gym_admin.this,packages_admin.class);
                 startActivity(intent3);
             }
-        });*/
+        });
 
         btnUpdateFee.setOnClickListener(new View.OnClickListener() {
             @Override
