@@ -31,13 +31,13 @@ public class gym_admin extends AppCompatActivity {
             }
         });
 
-        /*btnManageMember.setOnClickListener(new View.OnClickListener() {
+        btnManageMember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent2 = new Intent(gym_admin.this,manage_members_admin.class);
                 startActivity(intent2);
             }
-        });*/
+        });
 
         btnPackages.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,7 +6,7 @@ public class Member {
     private String weight;
     private Integer Pkg;
     private String password;
-   // private String fee;
+//    private String fee;
     private String email;
     private String phone;
 

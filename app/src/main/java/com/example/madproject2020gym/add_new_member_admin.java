@@ -20,13 +20,13 @@ import com.google.firebase.database.ValueEventListener;
 public class add_new_member_admin extends AppCompatActivity {
     EditText txtName, txtAge, txtWeight, txtEmail, txtPackage, txtPassword,txtPhone;
     Button btnAdd;
-   // int monthlyFeeFinal, deductFinal;
+    //int monthlyFeeFinal, deductFinal;
     String packageName;
-    //String deductStr;
-    //int deductInt;
-    //String monthlyFeeStr;
-    //int monthlyFeeInt;
-    //Double finalFee;
+//    String deductStr;
+//    int deductInt;
+//    String monthlyFeeStr;
+//    int monthlyFeeInt;
+//    Double finalFee;
 
 
 
@@ -48,8 +48,8 @@ public class add_new_member_admin extends AppCompatActivity {
 
 
 
-        //packageName = findViewById(R.id.editTextName).toString();
-       // packageName = txtPackage.toString();
+//        packageName = findViewById(R.id.editTextName).toString();
+//        packageName = txtPackage.toString();
 
         btnAdd =  (Button) findViewById(R.id.buttonAdd);
 
@@ -59,7 +59,7 @@ public class add_new_member_admin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //try {
+                try {
 
                     if (TextUtils.isEmpty(txtName.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter Name", Toast.LENGTH_SHORT).show();
@@ -126,11 +126,11 @@ public class add_new_member_admin extends AppCompatActivity {
 
 
                         //try {
-                            //String packageStr = txtPackage.toString();
-                            //int packageInt = Integer.parseInt(packageStr);
-
-
-                            //finalFee = (monthlyFeeFinal * packageInt) * (100 - deductFinal) / 100.0;
+//                            String packageStr = txtPackage.toString();
+//                            int packageInt = Integer.parseInt(packageStr);
+//
+//
+//                            finalFee = (monthlyFeeFinal * packageInt) * (100 - deductFinal) / 100.0;
 
 
 
@@ -140,7 +140,7 @@ public class add_new_member_admin extends AppCompatActivity {
                             member.setAge(txtAge.getText().toString().trim());
                             member.setPkg(Integer.parseInt(txtPackage.getText().toString().trim()));
                             member.setWeight(txtWeight.getText().toString().trim());
-                           //member.setFee(finalFee.toString().trim());
+//                            member.setFee(finalFee.toString().trim());
                             member.setPassword(txtPassword.getText().toString().trim());
                             member.setEmail(txtEmail.getText().toString().trim());
                             member.setPhone(txtPhone.getText().toString().trim());
@@ -157,10 +157,10 @@ public class add_new_member_admin extends AppCompatActivity {
 
                     }
 
-               // }
-                //catch(Exception ex){
-                //    Toast.makeText(getApplicationContext(), "Sorry, something went wrong :(", Toast.LENGTH_SHORT).show();
-                //}
+                }
+                catch(Exception ex){
+                    Toast.makeText(getApplicationContext(), "Sorry, something went wrong :(", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
