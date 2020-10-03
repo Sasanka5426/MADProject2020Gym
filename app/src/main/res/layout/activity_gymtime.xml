@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gymtime">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="80dp"
+        android:layout_height="97dp"
+        android:text="@string/gymtimetitle"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/gymtimeadddiet"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/button"
+        android:text="@string/gymtimeadddiet"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/gymtimebmi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/button"
+        android:text="@string/gymtime"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/updateprobutton"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/button"
+        android:text="@string/gymtimeupdatepro"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp" />
+</LinearLayout>

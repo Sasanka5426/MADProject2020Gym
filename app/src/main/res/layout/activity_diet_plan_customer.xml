@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DietPlanCustomer">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="263dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/dietplantitle"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="36sp" />
+
+    <EditText
+
+        android:id="@+id/adddietemail"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textEmailAddress" />
+
+
+
+    <EditText
+        android:id="@+id/adddietdiet"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="@string/adddiet"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dietsolution"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:hint="@string/dietsolution"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dietprocess"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="@string/dietprocess"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dietdiscription"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:ems="10"
+        android:hint="@string/dietdescription"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dietadddiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@color/button"
+            android:text="@string/addDiet"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:id="@+id/adddietssow"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/button"
+            android:layout_marginTop="20dp"
+            android:text="@string/showDiet"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:id="@+id/dietupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/button"
+            android:layout_marginTop="20dp"
+            android:text="@string/updateDiet"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:id="@+id/dietdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/button"
+            android:layout_marginTop="20dp"
+            android:text="@string/deleteDiet"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+
+    </LinearLayout>
+</LinearLayout>

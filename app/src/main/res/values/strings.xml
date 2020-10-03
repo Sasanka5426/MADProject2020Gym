@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">MADProject2020GYM</string>
+    <string name="dietplantitle">Diet Plan</string>
+    <string name="dietemail">Email</string>
+    <string name="adddiet">Diet</string>
+    <string name="dietsolution">Solution</string>
+    <string name="dietprocess">Process</string>
+    <string name="dietdescription">Description</string>
+    <string name="addDiet">Add</string>
+    <string name="showDiet">Show</string>
+    <string name="updateDiet">Update</string>
+    <string name="deleteDiet">Delete</string>
+    <string name="customerlogintit">Login</string>
+    <string name="cuslogbutton">Login</string>
+    <string name="logemailcus">Email</string>
+    <string name="logcuspass">Password</string>
+    <string name="welocometit">Welcome</string>
+    <string name="welcomegym">GYM</string>
+    <string name="welocomesup">SUPLIMENT STORE</string>
+    <string name="welcomelogout">LOG OUT</string>
+    <string name="gymtimetitle">GYM TIME</string>
+    <string name="gymtimeadddiet">Add Diet Plan</string>
+    <string name="gymtime">Calculate BMI Value</string>
+    <string name="gymtimeupdatepro">Update Profile</string>
+    <string name="bmicaltit"><![CDATA[Check BMI & Weight Difference]]></string>
+    <string name="bmiinitial">Initial Weight</string>
+    <string name="initialcurrent">Current Weight</string>
+    <string name="bmiheight">Height</string>
+    <string name="bmica">BMI</string>
+    <string name="bmiweight">WEIGHT DIFFERENCE</string>
+    <string name="Underweight">Under Weight</string>
+    <string name="Normal">Normal Weight</string>
+    <string name="overweight">Over Weight</string>
+    <string name="bmival">Calculate BMI</string>
+    <string name="bmitestweight">Weight(Kg)</string>
+    <string name="bmitestHeight">Height(cm)</string>
+    <string name="bmicalt">"Check BMI Value "</string>
+    <string name="updateprotitle">Update My Profile</string>
+    <string name="updateprofilename">Name</string>
+    <string name="updateprofileemail">Email</string>
+    <string name="updateprofileage">Age</string>
+    <string name="updateprofilepass">Password</string>
+    <string name="updateprofilepackage">Package</string>
+    <string name="updateprofilebuttons">Update</string>
+    <string name="logemailccc">Email</string>
+    <string name="logphone">Phone</string>
+    <string name="phonelog">Phone</string>
+    <string name="logpass">Password</string>
+
+
 </resources>
