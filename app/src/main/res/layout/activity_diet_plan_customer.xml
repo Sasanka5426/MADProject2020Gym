@@ -14,7 +14,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="40dp"
         android:text="@string/dietplantitle"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="@color/button_colorGoldS"
         android:textSize="36sp" />
 
     <EditText
@@ -72,7 +72,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:background="@color/button"
+            android:background="@color/button_colorS"
             android:text="@string/addDiet"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:background="@color/button"
+            android:background="@color/button_colorS"
             android:layout_marginTop="20dp"
             android:text="@string/showDiet"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:background="@color/button"
+            android:background="@color/button_colorS"
             android:layout_marginTop="20dp"
             android:text="@string/updateDiet"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
@@ -105,7 +105,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="@color/button"
+            android:background="@color/button_colorS"
             android:layout_marginTop="20dp"
             android:text="@string/deleteDiet"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />

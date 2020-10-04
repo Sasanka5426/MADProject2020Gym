@@ -22,7 +22,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="10dp"
         android:text="@string/customerlogintit"
-        android:textColor="@color/button"
+        android:textColor="@color/button_colorGoldS"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -48,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
-        android:background="@color/button"
+        android:background="@color/button_colorS"
         android:text="@string/cuslogbutton"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 

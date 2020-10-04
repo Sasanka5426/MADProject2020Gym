@@ -4,7 +4,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/text_color2S</item>
-        <item name="colorAccent">@color/button</item>
+        <item name="colorAccent">@color/button_colorS</item>
     </style>
 
 </resources>

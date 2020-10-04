@@ -14,7 +14,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
         android:text="@string/updateprotitle"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="@color/button_colorGoldS"
         android:textSize="36sp" />
 
     <EditText
@@ -69,7 +69,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="10dp"
-        android:background="@color/button"
+        android:background="@color/button_colorS"
         android:text="@string/updateprofilebuttons"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="24sp" />

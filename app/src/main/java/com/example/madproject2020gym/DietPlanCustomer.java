@@ -15,13 +15,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 public class DietPlanCustomer extends AppCompatActivity {
-    private String memberloginphone="";
-    EditText txtEmail, txtDiet, txtSolution, txtProcess, txtDescription;
+   private String memberloginphone = "";
+    EditText txtEmail;
+    EditText txtDiet, txtSolution, txtProcess, txtDescription;
 
     Button btnAddDiet, btnShowDiet, btnUpdateDiet, btnDeleteDiet;
     DatabaseReference dbRef;
     Dietplan dep;
     FirebaseDatabase rootNode;
+    String dietEmail = "";
 
 
     @Override
@@ -29,7 +31,7 @@ public class DietPlanCustomer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet_plan_customer);
 
-        memberloginphone = getIntent().getStringExtra("memberloginphone");
+       memberloginphone = getIntent().getStringExtra("memberloginphone");
 
         txtEmail = findViewById(R.id.adddietemail);
         txtDiet = findViewById(R.id.adddietdiet);
@@ -43,6 +45,8 @@ public class DietPlanCustomer extends AppCompatActivity {
         btnDeleteDiet = findViewById(R.id.dietdelete);
 
         dep = new Dietplan();
+
+
 
         btnAddDiet.setOnClickListener(new View.OnClickListener() {
 
@@ -75,10 +79,11 @@ public class DietPlanCustomer extends AppCompatActivity {
                 }
             }
         });
+
         btnShowDiet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Dietplan/diet1");
+                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Dietplan").child(memberloginphone);
                 readRef.addListenerForSingleValueEvent(new ValueEventListener() {
 
 
@@ -111,7 +116,7 @@ public class DietPlanCustomer extends AppCompatActivity {
                 updRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if(dataSnapshot.hasChild("diet1")){
+                        if(dataSnapshot.hasChild(memberloginphone)){
                             try{
                                 dep.setDietEmail(txtEmail.getText().toString().trim());
                                 dep.setDiet(txtDiet.getText().toString().trim());
@@ -119,7 +124,7 @@ public class DietPlanCustomer extends AppCompatActivity {
                                 dep.setDietProcess(txtProcess.getText().toString().trim());
                                 dep.setDietDescription(txtDescription.getText().toString().trim());
 
-                                dbRef = FirebaseDatabase.getInstance().getReference().child("Dietplan").child("diet1");
+                                dbRef = FirebaseDatabase.getInstance().getReference().child("Dietplan").child(memberloginphone);
                                 dbRef.setValue(dep);
                                 clearControls();
 
@@ -145,8 +150,8 @@ public class DietPlanCustomer extends AppCompatActivity {
                 delref.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if(dataSnapshot.hasChild("diet1")){
-                            dbRef = FirebaseDatabase.getInstance().getReference().child("Dietplan").child("diet1");
+                        if(dataSnapshot.hasChild(memberloginphone)){
+                            dbRef = FirebaseDatabase.getInstance().getReference().child("Dietplan").child(memberloginphone);
                             dbRef.removeValue();
                             clearControls();
                             Toast.makeText(DietPlanCustomer.this, "Delete", Toast.LENGTH_SHORT).show();
@@ -166,8 +171,10 @@ public class DietPlanCustomer extends AppCompatActivity {
         });
 
 
-
     }
+
+
+
     private void clearControls(){
         txtEmail.setText("");
         txtDiet.setText("");
