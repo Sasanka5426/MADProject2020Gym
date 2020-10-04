@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp"
+    tools:context=".AdminMaintainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/supplement_image_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/supplement_admin"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+
+            />
+
+        <EditText
+            android:id="@+id/supplement_name_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/supplement_image_maintain"
+            android:layout_margin="5dp"
+            android:layout_marginTop="2dp"
+            android:hint="Supplement Name"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18dp"
+
+
+            />
+
+        <EditText
+            android:id="@+id/supplement_price_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/supplement_name_admin"
+            android:layout_margin="5dp"
+            android:hint="Supplement Price"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18dp"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/description_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/supplement_price_admin"
+            android:layout_margin="5dp"
+            android:layout_marginTop="2dp"
+            android:hint="Supplement Description"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/change_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_admin"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FF5722"
+
+            android:padding="15dp"
+            android:text="Apply Changes"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/change_btn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FF5722"
+
+            android:padding="15dp"
+            android:text="Delete Item "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

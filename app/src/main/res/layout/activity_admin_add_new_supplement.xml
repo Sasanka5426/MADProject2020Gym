@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".AdminAddNewSupplement" >
+
+    <ImageView
+        android:id="@+id/select_image"
+        android:layout_width="183dp"
+        android:layout_height="178dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/select_image" />
+
+    <EditText
+        android:id="@+id/supplement_name"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:hint="Supplement Name.."
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textColor="#050000" />
+
+    <EditText
+        android:id="@+id/supplement_price"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplement_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="45dp"
+        android:hint="Supplement Price.."
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/supplement_description"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplement_price"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:hint="Supplement Description.."
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/add_new_supplement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplement_description"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="45dp"
+        android:background="#FF5722"
+        android:padding="17dp"
+        android:text="Add Supplement"
+        android:textAllCaps="false"
+
+
+        android:textSize="18dp"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategory">
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Manage Supplement"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/cat_image"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:layout_above="@+id/edit_btn"
+        android:layout_below="@+id/category"
+
+
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="26dp"
+        app:srcCompat="@drawable/supp" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="158dp"
+        android:background="#FF5722"
+        android:text="Maintain Supplement"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

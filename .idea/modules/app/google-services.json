@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "816514941897-j9onbqok9e0989u42q01v2r7jq5v7hqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.madproject2020gym",
+            "certificate_hash": "d19721684d5077a2b7630222a4938feec621d6a5"
+          }
+        },
+        {
           "client_id": "816514941897-848mugf0grvf1lqlqldbj6fgqa59g3dc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
