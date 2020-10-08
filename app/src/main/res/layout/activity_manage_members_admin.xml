@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manage_members_admin">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/manage_members_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/buttonAddMemberS"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="626dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/button_colorS"
+        android:text="Add New Member"
+        android:textColor="@color/text_color1S"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

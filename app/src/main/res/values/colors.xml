@@ -3,4 +3,11 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="button_colorS">#FF6624</color>
+    <color name="text_color1S">#FFFFFF</color>
+    <color name="text_color2S">#000000</color>
+    <color name="listTableS">#D1D1D1</color>
+    <color name="button_colorGoldS">#D1B42E</color>
+
+
 </resources>
