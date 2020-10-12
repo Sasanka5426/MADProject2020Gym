@@ -25,12 +25,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".admin_profile" />
         <activity android:name=".add_new_package_admin" />
         <activity android:name=".add_new_member_admin">
 
         </activity>
-        <activity android:name=".admin_home" />
+        <activity android:name=".admin_home" >
+
+        </activity>
     </application>
 
 </manifest>

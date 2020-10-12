@@ -24,7 +24,7 @@ public class manage_members_admin extends AppCompatActivity {
     private DatabaseReference memberRef;
     private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
-    Button btnAddMember;
+    //Button btnAddMember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +37,15 @@ public class manage_members_admin extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        btnAddMember = findViewById(R.id.buttonAddMemberS);
+        //btnAddMember = findViewById(R.id.buttonAddMemberS);
 
-        btnAddMember.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(manage_members_admin.this, add_new_member_admin.class);
-                startActivity(intent);
-            }
-        });
+//        btnAddMember.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(manage_members_admin.this, add_new_member_admin.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
 

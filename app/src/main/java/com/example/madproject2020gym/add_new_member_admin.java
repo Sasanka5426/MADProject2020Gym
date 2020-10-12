@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -69,6 +70,11 @@ public class add_new_member_admin extends AppCompatActivity {
 
                     else if (TextUtils.isEmpty(txtEmail.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter Email", Toast.LENGTH_SHORT).show();
+
+                    else if(!Patterns.EMAIL_ADDRESS.matcher(txtEmail.getText().toString()).matches()){
+                        txtEmail.setError("Please enter a valid email address");
+
+                    }
 
                     else if (TextUtils.isEmpty(txtPackage.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter Package", Toast.LENGTH_SHORT).show();

@@ -27,7 +27,7 @@
         android:id="@+id/buttonSupplementStore"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@color/button_colorS"
         android:text="Supplement Store"
         android:textColor="@color/text_color1S"
@@ -46,21 +46,10 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/buttonAdminProfile"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/button_colorS"
-        android:text="Admin Profile"
-        android:textColor="@color/text_color1S"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <Button
         android:id="@+id/buttonLogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="200dp"
         android:background="@color/button_colorS"
         android:text="Logout"
         android:textColor="@color/text_color1S"
